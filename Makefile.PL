@@ -126,12 +126,13 @@ configure_requires 'ExtUtils::PkgConfig'     => 0;
 configure_requires 'Module::Install'         => 1.19;
 configure_requires 'Module::Install::XSUtil' => 0;
 #
-test_requires      'JSON::PP'                => 0;
-test_requires      'MIME::Base32'            => 0;
-test_requires      'Test::Fatal'             => 0;
-test_requires      'Test::Differences'       => 0;
-test_requires      'Test::More'              => 1.302015;
-test_requires      'Test::NoWarnings'        => 0;
+test_requires 'JSON::PP'          => 0;
+test_requires 'MIME::Base32'      => 0;
+test_requires 'Test::Differences' => 0;
+test_requires 'Test::Exception'   => 0;
+test_requires 'Test::Fatal'       => 0;
+test_requires 'Test::More'        => 1.302015;
+test_requires 'Test::NoWarnings'  => 0;
 
 use_ppport 3.19;
 cc_include_paths 'include';
